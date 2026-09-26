@@ -1,6 +1,4 @@
-/* ==========================================
-   RESET E ESTILOS GERAIS
-   ========================================== */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -17,9 +15,7 @@ body {
     align-items: center;
 }
 
-/* ==========================================
-   CABEÇALHO
-   ========================================== */
+
 .header {
     text-align: center;
     margin-bottom: 40px;
@@ -37,9 +33,7 @@ body {
     color: #64748b;
 }
 
-/* ==========================================
-   ESTRUTURA DA TABELA
-   ========================================== */
+
 .container {
     width: 100%;
     max-width: 1100px;
@@ -62,7 +56,7 @@ th, td {
     border-bottom: 1px solid #e2e8f0;
 }
 
-/* Coluna de Recursos (Primeira Coluna) */
+
 .coluna-recursos, 
 tbody td:first-child {
     text-align: left;
@@ -72,9 +66,7 @@ tbody td:first-child {
     width: 22%;
 }
 
-/* ==========================================
-   CABEÇALHOS DOS PLANOS
-   ========================================== */
+
 .plano {
     position: relative;
     vertical-align: bottom;
@@ -102,11 +94,9 @@ tbody td:first-child {
     opacity: 0.8;
 }
 
-/* ==========================================
-   CORES E IDENTIDADE DE CADA PLANO
-   ========================================== */
 
-/* 1. Plano Básico (Azul) */
+
+
 .plano-basico {
     background-color: #eff6ff;
     color: #1e40af;
@@ -115,7 +105,7 @@ tbody td:first-child {
     background-color: #f0f9ff;
 }
 
-/* 2. Plano Turbo - MAIS VENDIDO (Roxo/Violeta) */
+
 .plano-turbo {
     background-color: #f3e8ff;
     color: #6b21a8;
@@ -126,7 +116,7 @@ tbody td:first-child {
     font-weight: 600;
 }
 
-/* Destaque do Plano Mais Vendido */
+
 .mais-vendido {
     box-shadow: inset 0 0 0 2px #7c3aed;
 }
@@ -147,7 +137,7 @@ tbody td:first-child {
     white-space: nowrap;
 }
 
-/* 3. Plano Ultra (Verde) */
+
 .plano-ultra {
     background-color: #ecfdf5;
     color: #065f46;
@@ -156,15 +146,13 @@ tbody td:first-child {
     background-color: #f0fdf4;
 }
 
-/* Preço nas linhas da tabela */
+
 .preco-linha {
     font-size: 1.15rem;
     font-weight: 700;
 }
 
-/* ==========================================
-   EFEITOS HOVER
-   ========================================== */
+
 tbody tr {
     transition: background-color 0.2s ease;
 }
@@ -173,9 +161,7 @@ tbody tr:hover td {
     background-color: #f1f5f9;
 }
 
-/* ==========================================
-   BOTÕES DE CONTRATAÇÃO
-   ========================================== */
+
 tfoot td {
     padding: 25px 20px;
     border-bottom: none;
@@ -202,7 +188,7 @@ tfoot td {
     transform: translateY(0);
 }
 
-/* Cores dos Botões */
+
 .btn-basico {
     background-color: #2563eb;
     color: #ffffff;

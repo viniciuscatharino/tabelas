@@ -1,0 +1,228 @@
+/* ==========================================
+   RESET E ESTILOS GERAIS
+   ========================================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f3f4f6;
+    color: #1f2937;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ==========================================
+   CABEÇALHO
+   ========================================== */
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #0f172a;
+    margin-bottom: 8px;
+    font-weight: 800;
+}
+
+.header p {
+    font-size: 1.1rem;
+    color: #64748b;
+}
+
+/* ==========================================
+   ESTRUTURA DA TABELA
+   ========================================== */
+.container {
+    width: 100%;
+    max-width: 1100px;
+    overflow-x: auto;
+}
+
+.tabela-planos {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+th, td {
+    padding: 18px 20px;
+    text-align: center;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+/* Coluna de Recursos (Primeira Coluna) */
+.coluna-recursos, 
+tbody td:first-child {
+    text-align: left;
+    background-color: #f8fafc;
+    font-weight: 600;
+    color: #334155;
+    width: 22%;
+}
+
+/* ==========================================
+   CABEÇALHOS DOS PLANOS
+   ========================================== */
+.plano {
+    position: relative;
+    vertical-align: bottom;
+    padding-top: 35px;
+    padding-bottom: 25px;
+    width: 26%;
+}
+
+.nome-plano {
+    display: block;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.preco-header {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+.preco-header small {
+    font-size: 0.85rem;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+/* ==========================================
+   CORES E IDENTIDADE DE CADA PLANO
+   ========================================== */
+
+/* 1. Plano Básico (Azul) */
+.plano-basico {
+    background-color: #eff6ff;
+    color: #1e40af;
+}
+.coluna-basico {
+    background-color: #f0f9ff;
+}
+
+/* 2. Plano Turbo - MAIS VENDIDO (Roxo/Violeta) */
+.plano-turbo {
+    background-color: #f3e8ff;
+    color: #6b21a8;
+    border-top: 6px solid #7c3aed;
+}
+.coluna-turbo {
+    background-color: #faf5ff;
+    font-weight: 600;
+}
+
+/* Destaque do Plano Mais Vendido */
+.mais-vendido {
+    box-shadow: inset 0 0 0 2px #7c3aed;
+}
+
+.badge-destaque {
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #7c3aed;
+    color: #ffffff;
+    font-size: 0.7rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
+/* 3. Plano Ultra (Verde) */
+.plano-ultra {
+    background-color: #ecfdf5;
+    color: #065f46;
+}
+.coluna-ultra {
+    background-color: #f0fdf4;
+}
+
+/* Preço nas linhas da tabela */
+.preco-linha {
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+/* ==========================================
+   EFEITOS HOVER
+   ========================================== */
+tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+tbody tr:hover td {
+    background-color: #f1f5f9;
+}
+
+/* ==========================================
+   BOTÕES DE CONTRATAÇÃO
+   ========================================== */
+tfoot td {
+    padding: 25px 20px;
+    border-bottom: none;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+/* Cores dos Botões */
+.btn-basico {
+    background-color: #2563eb;
+    color: #ffffff;
+}
+.btn-basico:hover {
+    background-color: #1d4ed8;
+}
+
+.btn-turbo {
+    background-color: #7c3aed;
+    color: #ffffff;
+}
+.btn-turbo:hover {
+    background-color: #6d28d9;
+}
+
+.btn-ultra {
+    background-color: #059669;
+    color: #ffffff;
+}
+.btn-ultra:hover {
+    background-color: #047857;
+}
